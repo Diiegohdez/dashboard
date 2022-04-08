@@ -1,9 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./userList.css"
 import { DataGrid } from '@material-ui/data-grid'
 import {DeleteForever} from '@material-ui/icons'
+import {UserRows} from "../../misDatos"
+import { Link } from 'react-router-dom'
 
 export default function UserList() {
+
+  const [data, setData]= useState(UserRows)
+
+  const handleDelete =(id)=>{
+    setData(data.filter((item) => item.id !== id));
+  }
 
   const columns = [
     { field: 'id', headerName: 'ID', width: 90 },
@@ -33,49 +41,21 @@ export default function UserList() {
       renderCell: (params)=>{
         return(
           <>
-           <button className="UserListModif">Editar</button>
-           <DeleteForever className="UserListIco"/>
+          <Link to={"/UserList/"+params.row.id}>
+          <button className="UserListModif">Editar</button>
+          </Link>
+           
+           <DeleteForever className="UserListIco" onClick={()=>handleDelete(params.row.id)}/>
           </>
         )
       }
     },
   ];
   
-  const rows = [
-    { id: 1, userName: 'Juan Zapata', avatar:'https://images.pexels.com/photos/810775/pexels-photo-810775.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
-    email:'JuanZ@gmail.com', status:'Active', transaccion:'$150.000' },
-
-    { id: 2, userName: 'Juan Zapata', avatar:'https://images.pexels.com/photos/810775/pexels-photo-810775.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
-    email:'JuanZ@gmail.com', status:'Active', transaccion:'$150.000' },
-
-    { id: 3, userName: 'Juan Zapata', avatar:'https://images.pexels.com/photos/810775/pexels-photo-810775.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
-    email:'JuanZ@gmail.com', status:'Active', transaccion:'$150.000' },
-
-    { id: 4, userName: 'Juan Zapata', avatar:'https://images.pexels.com/photos/810775/pexels-photo-810775.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
-    email:'JuanZ@gmail.com', status:'Active', transaccion:'$150.000' },
-
-    { id: 5, userName: 'Juan Zapata', avatar:'https://images.pexels.com/photos/810775/pexels-photo-810775.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
-    email:'JuanZ@gmail.com', status:'Active', transaccion:'$150.000' },
-
-    { id: 6, userName: 'Juan Zapata', avatar:'https://images.pexels.com/photos/810775/pexels-photo-810775.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
-    email:'JuanZ@gmail.com', status:'Active', transaccion:'$150.000' },
-
-    { id: 7, userName: 'Juan Zapata', avatar:'https://images.pexels.com/photos/810775/pexels-photo-810775.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
-    email:'JuanZ@gmail.com', status:'Active', transaccion:'$150.000' },
-
-    { id: 8, userName: 'Juan Zapata', avatar:'https://images.pexels.com/photos/810775/pexels-photo-810775.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
-    email:'JuanZ@gmail.com', status:'Active', transaccion:'$150.000' },
-
-    { id: 9, userName: 'Juan Zapata', avatar:'https://images.pexels.com/photos/810775/pexels-photo-810775.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
-    email:'JuanZ@gmail.com', status:'Active', transaccion:'$150.000' },
-
-    { id: 10, userName: 'Juan Zapata', avatar:'https://images.pexels.com/photos/810775/pexels-photo-810775.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
-    email:'JuanZ@gmail.com', status:'Active', transaccion:'$150.000' },
-
-  ];
+  
   return (
     <div className="Userlist">
-        <DataGrid rows={rows} disableSelectionOnClick columns={columns} pageSize={9} checkboxSelection/>
+        <DataGrid rows={data} disableSelectionOnClick columns={columns} pageSize={9} checkboxSelection/>
     </div>
   )
 }
