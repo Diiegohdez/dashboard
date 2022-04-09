@@ -4,6 +4,7 @@ import  Home from "./pages/home/home";
 import UserList from "./pages/UserList/UserList"
 import "./App.css"
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
+import User from "./pages/User/User";
 
 
 function App() {
@@ -14,7 +15,8 @@ function App() {
         <Sidebar/>
         <Routes>
           <Route path="/" element={<Home/>}/>
-          <Route path="/Usuario" element={<UserList/>}/>
+          <Route path="/UserList" element={<UserList/>}/>
+          <Route path="UserList/:Id" element={<User/>}/>
         </Routes>
         
         

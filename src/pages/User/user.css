@@ -1,0 +1,72 @@
+.User{
+    flex: 4;
+    padding: 20px;
+}
+
+.UserTitleContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.UserAdd{
+    width: 80px;
+    border: none;
+    padding: 5px;
+    background-color: rgb(107, 120, 192);
+    cursor: pointer;
+    color: white;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+.UserContainer{
+    display: flex;
+    margin-left: 20px;
+
+}
+
+.UserShow{
+    flex: 1;
+    padding: 20px;
+    -webkit-box-shadow: 1px 7px 0px 1px rgba(0,0,0,0.08);
+    -moz-box-shadow: 1px 7px 0px 1px rgba(0,0,0,0.08);
+    box-shadow: 1px 7px 0px 1px rgba(0,0,0,0.08);
+    
+}
+
+.UserUpdate{
+    flex: 2;
+    padding: 20px;
+    -webkit-box-shadow: 1px 7px 0px 1px rgba(0,0,0,0.08);
+    -moz-box-shadow: 1px 7px 0px 1px rgba(0,0,0,0.08);
+    box-shadow: 1px 7px 0px 1px rgba(0,0,0,0.08);
+    margin-left: 20px;
+}
+
+.UserShowTop{
+    display: flex;
+    align-items: center;
+    
+}
+
+.UserShoeImg{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.UserShowTopTittle{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.UserShowName{
+    font-weight: 600;
+}
+
+.UserShowTitle{
+    font-weight: 300;
+}
