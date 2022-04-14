@@ -1,0 +1,67 @@
+.NewUser{
+    flex: 4;
+}
+
+.NewUserTitle{
+    display: flex;
+    margin-left: 40px;
+    color: rgb(107, 120, 192);
+}
+
+.NewUserFor{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 40px;
+}
+
+.NewUserIten{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.NewUserIten>label{
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.NewUserIten>input{
+    height: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    color: #444;
+}
+
+.NewUserGen>input{
+    margin-top: 15px;
+
+}
+
+.NewUserGen>label{
+    margin: 10px;
+    font-size: 18px;
+    
+}
+
+.NewUserSelect{
+    height: 20px;
+    border-radius: 5px;
+}
+
+.NewUserButton{
+    
+    width: 100px;
+    height: 50px;
+    border: none;
+    background-color: rgb(107, 120, 192);
+    cursor: pointer;
+    color: white;
+    padding: 7px 10px;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-left: 120px;
+}

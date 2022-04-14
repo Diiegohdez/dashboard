@@ -129,7 +129,13 @@
 .UserUpdateRight{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 
+}
+
+.UserUpdateUpload{
+    display: flex;
+    align-items: center;
 }
 
 .UserUpdateImg{
@@ -138,4 +144,18 @@
     border-radius: 10px;
     object-fit: cover;
     margin-right: 20px;
+}
+
+.UserUpdateIcon{
+    cursor: pointer;
+}
+
+.UserUpdateButtom{
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    background-color: rgb(107, 120, 192);
+    color: white;
+    font-weight: 600;
 }
