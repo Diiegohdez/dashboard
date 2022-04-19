@@ -1,0 +1,71 @@
+.ProductsList{
+    flex: 4;
+    padding: 20px;
+}
+
+.ProductTitleContainer{
+    display: flex;
+    align-items: center;
+    justify-content:space-between
+}
+
+.butoonaddProduct{
+    width: 80px;    
+    border: none;
+    padding: 5px;
+    background-color: rgb(107, 120, 192);
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.ProductsTop{
+    display: flex;
+}
+
+.ProductsTopLeft, .ProductsTopRight{
+    flex: 1;
+}
+
+.ProductsTopRight{
+    padding: 20px;
+    margin: 20px;
+    -webkit-box-shadow: 1px 7px 0px 1px rgba(0,0,0,0.08);
+    -moz-box-shadow: 1px 7px 0px 1px rgba(0,0,0,0.08);
+    box-shadow: 1px 7px 0px 1px rgba(0,0,0,0.08);
+}
+
+.ProductsInformImg{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.ProductsTopInform{
+    display: flex;
+    align-items: center;
+}
+
+.ProductName{
+    font-weight: 600;
+}
+
+.ProductsBottomInform{
+    margin-top: 10px;
+}
+
+.ProductsInformItem{
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.ProductsInfoValue{
+    font-weight: 300;
+}
+    
+

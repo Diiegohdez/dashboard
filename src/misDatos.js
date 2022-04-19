@@ -62,6 +62,31 @@ export const userData = [
     
   ];
 
+  export const ProductsData = [
+    {
+      name: 'Ene',
+      "Sales": 4000,
+      
+    },
+    {
+        name: 'Febr',
+        "Sales": 4000,
+        
+    },
+    {
+        name: 'Marz',
+        "Sales": 3000,
+        
+    },
+    {
+        name: 'Abri',
+        "Sales": 5000,
+        
+    },
+
+    
+  ];
+
   export const UserRows = [
     { id: 1, userName: 'Juan Zapata', avatar:'https://images.pexels.com/photos/810775/pexels-photo-810775.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
     email:'JuanZ@gmail.com', status:'Active', transaccion:'$150.000' },
@@ -92,5 +117,38 @@ export const userData = [
 
     { id: 10, userName: 'Juan Zapata', avatar:'https://images.pexels.com/photos/810775/pexels-photo-810775.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
     email:'JuanZ@gmail.com', status:'Active', transaccion:'$150.000' },
+
+  ];
+
+  export const ProductsRows = [
+    { id: 1, Name: 'xiaomi mi 12 pro', img:'https://images.pexels.com/photos/9403812/pexels-photo-9403812.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+    stock:'480', disponible:'si', Precio:'$150.000' },
+
+    { id: 2, Name: 'xiaomi mi 12 pro', img:'https://images.pexels.com/photos/9403812/pexels-photo-9403812.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+    stock:'480', disponible:'si', Precio:'$150.000' },
+
+    { id: 3, Name: 'xiaomi mi 12 pro', img:'https://images.pexels.com/photos/9403812/pexels-photo-9403812.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+    stock:'480', disponible:'si', Precio:'$150.000' },
+
+    { id: 4, Name: 'xiaomi mi 12 pro', img:'https://images.pexels.com/photos/9403812/pexels-photo-9403812.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+    stock:'480', disponible:'si', Precio:'$150.000' },
+
+    { id: 5, Name: 'xiaomi mi 12 pro', img:'https://images.pexels.com/photos/9403812/pexels-photo-9403812.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+    stock:'480', disponible:'si', Precio:'$150.000' },
+
+    { id: 6, Name: 'xiaomi mi 12 pro', img:'https://images.pexels.com/photos/9403812/pexels-photo-9403812.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+    stock:'480', disponible:'si', Precio:'$150.000' },
+
+    { id: 7, Name: 'xiaomi mi 12 pro', img:'https://images.pexels.com/photos/9403812/pexels-photo-9403812.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+    stock:'480', disponible:'si', Precio:'$150.000' },
+
+    { id: 8, Name: 'xiaomi mi 12 pro', img:'https://images.pexels.com/photos/9403812/pexels-photo-9403812.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+    stock:'480', disponible:'si', Precio:'$150.000' },
+
+    { id: 9, Name: 'xiaomi mi 12 pro', img:'https://images.pexels.com/photos/9403812/pexels-photo-9403812.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+    stock:'480', disponible:'si', Precio:'$150.000' },
+
+    { id: 10, Name: 'xiaomi mi 12 pro', img:'https://images.pexels.com/photos/9403812/pexels-photo-9403812.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+    stock:'480', disponible:'si', Precio:'$150.000' },
 
   ];
