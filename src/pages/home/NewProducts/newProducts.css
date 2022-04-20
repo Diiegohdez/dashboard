@@ -1,3 +1,70 @@
 .NewProducts{
     flex: 4;
 }
+
+.NewProductoTitle{
+    display: flex;
+    margin-left: 250px;
+    color: rgb(107, 120, 192);
+}
+
+.NewProductsForm{
+    margin-left: 250px;
+    
+    
+}
+
+.NewProductImg{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 50px;
+    margin-left: 55px;
+}
+
+.NewProductsUploadButton{
+    display: flex;
+    align-items: center;
+    
+}
+
+.NewProductsItems{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.NewProductsItems >label{
+    margin-bottom: 10px;
+    color: grey;
+
+}
+
+.NewProductsItems >input{
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+
+}
+
+.NewProductsItems >select{
+    margin-bottom: 20px;
+}
+
+.NewProductoCreate{
+    border: none;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: rgb(107, 120, 192);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: 75px;
+    
+
+}
+
+
+

@@ -9,6 +9,11 @@
     justify-content:space-between
 }
 
+.ProductTitle{
+    color: rgb(107, 120, 192);
+
+}
+
 .butoonaddProduct{
     width: 80px;    
     border: none;
@@ -61,11 +66,74 @@
     width: 150px;
     display: flex;
     justify-content: space-between;
+    font-weight: 600;
 
 }
 
 .ProductsInfoValue{
     font-weight: 300;
 }
-    
 
+.Productsbottom{
+    padding: 20px;
+    margin: 20px;
+    -webkit-box-shadow: 1px 7px 0px 1px rgba(0,0,0,0.08);
+    -moz-box-shadow: 1px 7px 0px 1px rgba(0,0,0,0.08);
+    box-shadow: 1px 7px 0px 1px rgba(0,0,0,0.08);
+}
+    
+.ProductsForm{
+    display: flex;
+    justify-content: space-between;
+}
+
+.ProductsFormLeft{
+    display: flex;
+    flex-direction: column;
+}
+
+.ProductsFormLeft >label{
+    margin-bottom: 10px;
+    color: grey;
+}
+
+.ProductsFormLeft >input{
+    margin-bottom: 10px;
+    border: none;
+    padding: 5px;
+    border-bottom: 1px solid gray;
+}
+
+.ProductsFormLeft >select{
+    margin-bottom: 10px;
+}
+
+.ProductsUploadImg{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.ProductsFormRight{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+}
+
+.ProductsUpload{
+    display: flex;
+    align-items: center;
+}
+
+.ProductsButtonP{
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgb(107, 120, 192);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+
+}
